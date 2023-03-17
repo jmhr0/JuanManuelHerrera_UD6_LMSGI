@@ -1,0 +1,11 @@
+insert node
+<baile id="9">
+<nombre>bachata</nombre>
+<precio cuota="mensual" moneda="dolares">43</precio>
+<plazas>18</plazas>
+<comienzo>09/01/2023</comienzo>
+<fin>15/08/2023</fin>
+<profesor>Antonio Jimenez González</profesor>
+<sala>7</sala>
+</baile>
+before doc("DB_BailesDeSalon.xml")//Bailes/baile[1]
