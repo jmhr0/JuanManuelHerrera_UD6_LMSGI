@@ -20,7 +20,7 @@ let $Edicion:=$libro/Edicion
 let $ISBN:=$libro/ISBN
 let $Numpaginas:=$libro/NumPaginas
 let $Autores:=$libro/Autores
-where $libro/NumPaginas > 500
+where $libro/NumPaginas > 150
 order by $libro/Cod_Libro
 return
 <tr>
