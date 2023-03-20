@@ -1,0 +1,42 @@
+<html>
+<body>
+<table border="1">
+<tr>
+<th>Codigo Libro</th>
+<th>Titulo</th>
+<th>Editorial</th>
+<th>Edicion</th>
+<th>ISBN</th>
+<th>Número paginas</th>
+<th>Nombre Autor</th>
+<th>Apellido Autor</th>
+<th>Codigo Autor</th>
+</tr>
+{
+for $libro in doc("C:\Users\1DAW_2223_03\Downloads\Carpeta personalclase\LGSGI\UD 6\Actividades\Act 3\BD_Libros.xml")//Libros/libro
+let $codlib:=$libro/Cod_Libro
+let $Titulo:=$libro/Titulo
+let $Editorial:=$libro/Editorial
+let $Edicion:=$libro/Edicion
+let $ISBN:=$libro/ISBN
+let $Numpaginas:=$libro/NumPaginas
+let $Autornom:=$libro/Autores/autor/Nombre
+let $Autorape:=$libro/Autores/autor/Apellidos
+let $CodAut:=$libro/Autores/autor/Cod_Autor
+order by $libro/Cod_Libro
+return
+<tr>
+<td>{data($codlib)}</td>
+<td>{data($Titulo)}</td>
+<td>{data($Editorial)}</td>
+<td>{data($Edicion)}</td>
+<td>{data($ISBN)}</td>
+<td>{data($Numpaginas)}</td>
+<td>{data($Autornom)}</td>
+<td>{data($Autorape)}</td>
+<td>{data($CodAut)}</td>
+</tr>
+}
+</table>
+</body>
+</html>

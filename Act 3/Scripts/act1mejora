@@ -1,0 +1,2 @@
+for $libro in doc("C:\Users\1DAW_2223_03\Downloads\Carpeta personalclase\LGSGI\UD 6\Actividades\Act 3\BD_Libros.xml")//Libros/libro
+return $libro/Autores
