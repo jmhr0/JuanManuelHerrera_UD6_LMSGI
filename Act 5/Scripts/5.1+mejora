@@ -1,0 +1,19 @@
+insert node
+<libro>
+   <Cod_Libro>12</Cod_Libro>
+   <Titulo>LOS CRIMENES DE HAMLETa</Titulo>
+   <Editorial>CONTRALUZ EDITORIAL</Editorial>
+   <Edicion>3</Edicion>
+   <ISBN>9788418945557</ISBN>
+   <NumPaginas>408</NumPaginas>
+   <Autores>
+      <autor>
+         <Cod_Autor>12</Cod_Autor>
+         <Nombre>Malenka </Nombre>
+         <Apellidos>Ramos</Apellidos>
+         <FechaNacimiento>16/07/1978</FechaNacimiento>
+         <Nacionalidad>Española</Nacionalidad>
+      </autor>
+   </Autores>
+</libro>
+after doc("BD_Libros.xml")//Libros/libro[11]
